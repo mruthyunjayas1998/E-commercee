@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head section holds info for the browser. -->
+    <head>
+        <!-- Our page's title and custom styling file. -->
+		<title>Sample Page</title>
+        
+        <!-- Info for the browser to decode our HTML code. -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap files -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+  <style>
+
+/* This is how you write a comment in CSS! */
+
+/* Make the navbar links sliiide to their targets, instead of jumping. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Color the background and add some space to the sides of the main column. */
+.container-fluid {
+    background-color: #F8B003;
+    /* We use !important to override the padding setting that Bootstrap already put for the container-fluid class. */
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+
+/* Color the main column background white. */
+.col {
+    background-color: white;
+}
+
+/* Put a nice frame with smoothened corners and a soft shadow around all images on the page. */
+img {
+    border: 4px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(17,17,17,0.2);
+}
+
+/* Color the second (photography) section's background light gray for contrast. */
+#photography {
+    background-color: whitesmoke;
+}
+
+/* Space out the photos in our gallery a little. */
+.thumbnail {
+    margin: 4%;
+}
+
+.col.main {
+    background-color: white;
+    box-shadow: 0 0 50px rgba(17,17,17,0.5);
+}
+
+.row.section {
+    padding: 5%;
+}
+
+.navbar {
+    box-shadow: 0px 4px 8px rgba(17,17,17,0.5);
+}
+
+/* Bold the navbar's brand and put spacing on its left so it shifts right. */
+.navbar-brand {
+    font-weight: bold;
+    padding-left: 12%;
+}
+
+#home {
+    padding: 20%;
+    background-image: url("media/pavement.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.bigtext {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    text-shadow: 8px  8px 8px rgba(17,17,17,0.9);
+}
+
+#contact {
+    background-image: radial-gradient(#404040, #202020);
+}
+  </style>
+
+
+ </head>
+    <!-- Body holds the content of the page. -->
+    <body>
+
+        <div class="sticky-top">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
+                <a class="navbar-brand d-flex w-50 mr-auto" href="#home" style="color: purple">Raksha Futnishing</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="nav navbar-nav mr-auto justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" style="font-size:20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" style="font-size:20px;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#photography" style="font-size:20px;">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"style="font-size:20px;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Page container -->
+        <div class="container-fluid">
+            
+            <!-- Main column where content goes -->
+            <div class="col main">
+
+                <!-- Header section -->
+                <div class="row section" id="home">
+                    <div class="bigtext">
+                        <h1 style="font-size:70px;">Raksha Furnishing</h1>
+                        <h4>ALL Types of Mats And Wallpaperings</h4>
+                    </div>
+                </div>
+
+                <!-- About section -->
+                <div class="row section" id="about">
+
+                    <div class="col-3">
+                        <img src="media/Curtions.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="col-9">
+                        <h2>About Me</h2>
+
+                        <span class="align-middle">
+                            <p>
+                                Home furnishing products include curtains, pillows, door mats, rugs, bath linen, bed covers, comforters, and all other household textiles that are referred to as soft furnishings.  </p>
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Photography section -->
+                <div class="row section" id="photography">
+
+                    <div class="column-fluid">
+    
+                        <h2>Products</h2>
+    
+                        <p>
+                            Door Mats, Flooring Mats, Curtains, Shadenuts, Wallpapers, Sofa Cushions, Diwan set 
+                        </p>
+    
+                        <!-- Photo gallery -->
+
+                        <!-- Top row -->
+                        <div class="row">
+
+                            <!-- Top left photo -->
+                            <div class="col-6">
+                                <!-- Designate that it's a thumbnail so it has a nice border. -->
+                                <div class="thumbnail">
+                                    <img src="media/Curtions.jpg" class="img-fluid">
+                                </div>
+                            </div>
+    
+                            <!-- Top right photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/grass mat.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                        
+    
+                        <!-- Bottom row -->
+                        
+                            <!-- Bottom left photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/flooring mat.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Bottom right photo -->
+                            
+                        
+
+		                
+                            <!-- Bottom left photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/office-floor.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Bottom right photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/grass 2.jpeg" class="img-fluid">
+                                </div>
+                            </div>
+                        
+			            
+                            <!-- Bottom left photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/dewan set.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Bottom right photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/agro-shade-nets.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                         
+                        
+			
+			            
+                            <!-- Bottom left photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/wall.jfif" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Bottom right photo -->
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/s-l300.jpg" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="thumbnail">
+                                    <img src="media/floring 1.jfif" class="img-fluid">
+                                </div>
+                            </div>
+
+                        
+
+
+    
+                    </div>
+			
+    
+       		
+
+                <!-- Contact section -->
+                <div class="row section" id="contact">
+                    <div class="bigtext">
+                        <h1 class="text-center">Contact</h1>
+                        <p>
+                            <a href="#">mruthyunjays1998@gamil.com</a> <br> Revana Sideeshwar Kengol,<br>Durgigudi, Park Extension Road<br>Shimoga -577201 <br>Mobile NO: 9663093123
+                        </p>
+                        <br>
+                        <p>
+                            Find me on the below platforms too:
+                        </p>
+                        <p>
+                            <a href="#">Facebook</a> • <a href="#">Youtube </a> •<a href="#"> <i class="fa fa-facebook"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
